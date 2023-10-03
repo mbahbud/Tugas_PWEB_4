@@ -1,10 +1,7 @@
 <!DOCTYPE html>
-<html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Validasi Form dengan JavaScript</title>
+  <title>Form memakai JavaScript</title>
   <link rel="stylesheet" href="./styles.css">
   <link rel="shortcut icon" href="./assets/favicon.png" type="image/x-icon">
   <script src="./script.js"></script>
@@ -12,27 +9,27 @@
 
 <body>
   <div class="container">
-    <form name="formPendaftaran" action="" method="post" onsubmit="return validateForm()">
+    <form name="form" action="" method="post" onsubmit="return validateForm()">
       <h1>Formulir Mahasiswa</h1>
-      <div class="form-group">
-        <label for="nama" class="form-label">Nama</label>
-        <input type="text" id="nama" name="nama" placeholder="Masukkan nama" class="form-control">
+      <div class="group_cnt">
+        <label for="nama" class="label_cnt">Nama</label>
+        <input type="text" id="nama" name="nama" placeholder="Masukkan nama" class="control_cnt">
         <div id="nama-suggestions"></div>
-        <div class="form-text">Nama terdiri dari 2-30 karakter.</div>
+        <div class="text"_cnt>Nama terdiri dari 2-30 karakter.</div>
       </div>
-      <div class="form-group">
-        <label for="nim" class="form-label">NIM</label>
-        <input type="text" id="nim" name="nim" placeholder="Masukkan Nomor Induk Mahasiswa" class="form-control">
-        <div class="form-text">NRP harus terdiri dari 10 karakter</div>
+      <div class="group_cnt">
+        <label for="nim" class="label_cnt">NIM</label>
+        <input type="text" id="nim" name="nim" placeholder="Masukkan Nomor Induk Mahasiswa" class="control_cnt">
+        <div class="text"_cnt>NRP harus terdiri dari 10 karakter</div>
       </div>
-      <div class="form-group">
-        <label for="email" class="form-label">Email</label>
-        <input type="email" id="email" name="email" placeholder="Masukkan alamat email" class="form-control">
-        <div class="form-text"> Email akan dikirimkan untuk lebih lanjut</div>
+      <div class="group_cnt">
+        <label for="email" class="label_cnt">Email</label>
+        <input type="email" id="email" name="email" placeholder="Masukkan alamat email" class="control_cnt">
+        <div class="text"_cnt> Email akan dikirimkan untuk lebih lanjut</div>
       </div>
-      <div class="form-group">
-        <label for="mk" class="form-label">Mata Kuliah</label>
-        <select id="mk" name="mk" class="form-select">
+      <div class="group_cnt">
+        <label for="mk" class="label_cnt">Mata Kuliah</label>
+        <select id="mk" name="mk" class="selec_cntt">
           <option value="" disabled selected>Pilih mata kuliah</option>
           <option value="tg">Teori Graf</option>
           <option value="jarkom">Jaringan Komputer</option>
@@ -41,9 +38,9 @@
           <option value="pweb">Pemrograman Web</option>
         </select>
       </div>
-      <div class="form-group">
-        <label for="dosen" class="form-label">Dosen</label>
-        <input type="text" id="dosen" name="dosen" placeholder="Masukkan nama dosen" class="form-control">
+      <div class="group_cnt">
+        <label for="dosen" class="label_cnt">Dosen</label>
+        <input type="text" id="dosen" name="dosen" placeholder="Masukkan nama dosen" class="control_cnt">
         <div id="dosen-suggestions"></div>
       </div>
       <button type="submit" class="btn-primary">Submit</button>
